@@ -1,33 +1,87 @@
 @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
 
-.game{
-    width:255px;
+html, body {
+    height: 100%; 
+    margin: 0; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    font-family: 'Dela Gothic One', sans-serif;
+}
+
+
+.start-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 1600px;
+    height: 100vh;
+    background-color: #f25;
+  }
+  
+  .start-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  #startButton {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #startButton:hover {
+    background-color: #45a049;
+  }
+  
+  /* Стили для экрана игры */
+  .game {
+    display: none;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100%;
+    width:320px;
     text-align: center;
     font-family: 'Dela Gothic One', sans-serif;
     color: white;
     margin:auto;
-}
-
-.title{
+  }
+  
+  .game-title {
+    width: 255px;
     background-color: #f25;
     padding: 5px 0;
     margin: 5px 0;
-}
-
-span{
-    color: #fa0;
-}
-
-.square{
-    width: 80px;
-    height: 80px;
+  }
+  
+  .row {
+    display: flex;
+  }
+  
+  .square {
+    color: #fff;
+    width: 150px;
+    height: 150px;
     background: #f25;
     float: left;
-    margin: 2px;
-    font-size: 50px;
-}
-
-.square:hover{
+    margin: 5px;
+    font-size: 100px;
+  }
+  
+  .square:hover {
     background: #000;
     cursor: pointer;
-}
+  }
+
+  
+  
+  
+  
