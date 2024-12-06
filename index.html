@@ -7,20 +7,30 @@
     <title>Крестики-нолики</title>
   </head>
   <body>
-    <div class="game">
-      <div class="title"><span>КРЕСТИКИ-НОЛИКИ</span> ИГРА</div>
+    <div class="start-screen">
+      <div class="start-title">Добро пожаловать в игру</div>
+      <button id="startButton" onclick="startGame()">Играть</button>
+    </div>
+    <div class="game" style="display: none">
+      <div class="game-title"><span>КРЕСТИКИ-НОЛИКИ</span> ИГРА</div>
 
-      <div class="square" id="item1" onclick="game(this.id)"></div>
-      <div class="square" id="item2" onclick="game(this.id)"></div>
-      <div class="square" id="item3" onclick="game(this.id)"></div>
+      <div class="row">
+        <div class="square" id="item1" onclick="game(this.id)"></div>
+        <div class="square" id="item2" onclick="game(this.id)"></div>
+        <div class="square" id="item3" onclick="game(this.id)"></div>
+      </div>
 
-      <div class="square" id="item4" onclick="game(this.id)"></div>
-      <div class="square" id="item5" onclick="game(this.id)"></div>
-      <div class="square" id="item6" onclick="game(this.id)"></div>
+      <div class="row">
+        <div class="square" id="item4" onclick="game(this.id)"></div>
+        <div class="square" id="item5" onclick="game(this.id)"></div>
+        <div class="square" id="item6" onclick="game(this.id)"></div>
+      </div>
 
-      <div class="square" id="item7" onclick="game(this.id)"></div>
-      <div class="square" id="item8" onclick="game(this.id)"></div>
-      <div class="square" id="item9" onclick="game(this.id)"></div>
+      <div class="row">
+        <div class="square" id="item7" onclick="game(this.id)"></div>
+        <div class="square" id="item8" onclick="game(this.id)"></div>
+        <div class="square" id="item9" onclick="game(this.id)"></div>
+      </div>
     </div>
 
     <script src="script.js"></script>
