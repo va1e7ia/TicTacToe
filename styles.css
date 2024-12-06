@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+
+.game{
+    width:255px;
+    text-align: center;
+    font-family: 'Dela Gothic One', sans-serif;
+    color: white;
+    margin:auto;
+}
+
+.title{
+    background-color: #f25;
+    padding: 5px 0;
+    margin: 5px 0;
+}
+
+span{
+    color: #fa0;
+}
+
+.square{
+    width: 80px;
+    height: 80px;
+    background: #f25;
+    float: left;
+    margin: 2px;
+    font-size: 50px;
+}
+
+.square:hover{
+    background: #000;
+    cursor: pointer;
+}
