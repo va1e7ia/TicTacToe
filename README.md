@@ -1,4 +1,4 @@
 # TicTacToe
 
 Tic Tac Toe using JS
-[Demo video](video/demo.mp4)
+[Demo video](video/demo1.mp4)
