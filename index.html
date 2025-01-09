@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Крестики-нолики</title>
+  </head>
+  <body>
+    <div class="start-screen">
+      <div class="content-container">
+        <span class="tictactoe-title">Крестики-нолики</span>
+        <div class="start-title">Добро пожаловать в игру</div>
+
+        <button id="startButton" onclick="showNicknameForm()">Играть</button>
+        <button id="statsButton" onclick="showStats()">Статистика</button>
+      </div>
+    </div>
+
+    <div class="stats-screen" style="display: none">
+      <button onclick="goBackToStartScreen()">Назад</button>
+      <h2>Статистика</h2>
+
+      <div id="game-history"></div>
+    </div>
+
+    <div class="nickname-form" style="display: none">
+      <div class="content-container-nickname">
+        <label for="player1">Никнейм игрока 1:</label>
+        <input type="text" id="player1" />
+        <label for="player2">Никнейм игрока 2:</label>
+        <input type="text" id="player2" />
+        <button id="startGameButton" onclick="startGame()">Начать игру</button>
+        <div id="error-message" style="color: #fe8081; display: none">
+          Пожалуйста, введите никнеймы для обоих игроков.
+        </div>
+        <div id="error-message-same" style="color: #fe8081; display: none">
+          Имена должны быть различными
+        </div>
+      </div>
+    </div>
+
+    <div class="game" style="display: none">
+      <div class="game-container">
+        <div class="game-title"><span>КРЕСТИКИ-НОЛИКИ</span> ИГРА</div>
+
+        <div class="game-info">
+          <p id="turn-info"></p>
+          <p><strong>Лог игры:</strong></p>
+          <div
+            id="game-log"
+            style="
+              width: 455px;
+              color: #000;
+              background-color: aliceblue;
+              border: 1px solid #000;
+              padding: 10px;
+              height: 150px;
+              overflow-y: auto;
+            "
+          ></div>
+        </div>
+
+        <div class="row">
+          <div class="square" id="item1" onclick="game(this.id)"></div>
+          <div class="square" id="item2" onclick="game(this.id)"></div>
+          <div class="square" id="item3" onclick="game(this.id)"></div>
+        </div>
+
+        <div class="row">
+          <div class="square" id="item4" onclick="game(this.id)"></div>
+          <div class="square" id="item5" onclick="game(this.id)"></div>
+          <div class="square" id="item6" onclick="game(this.id)"></div>
+        </div>
+
+        <div class="row">
+          <div class="square" id="item7" onclick="game(this.id)"></div>
+          <div class="square" id="item8" onclick="game(this.id)"></div>
+          <div class="square" id="item9" onclick="game(this.id)"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
